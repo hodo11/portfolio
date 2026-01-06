@@ -126,7 +126,7 @@ body {
     justify-content: center;
     padding: 120px 20px 80px;
     position: relative;
-    background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80');
+    background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -211,6 +211,14 @@ body {
     margin-bottom: 3rem;
 }
 
+.contact .section-title {
+    color: white;
+}
+
+.contact .section-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -238,17 +246,15 @@ body {
     background-color: var(--bg-secondary);
 }
 
-.project-placeholder {
+.project-image img {
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-.project-placeholder svg {
-    width: 100%;
-    height: 100%;
+.project-card:hover .project-image img {
+    transform: scale(1.05);
 }
 
 .project-content {
@@ -298,7 +304,7 @@ body {
 /* Contact Section */
 .contact {
     padding: 100px 20px;
-    background-color: var(--bg-primary);
+    background-color: var(--bg-dark);
 }
 
 .contact-form {
