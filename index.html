@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 | 개발자</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">HODO11</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">안녕하세요,<br><span class="hero-name">박경수</span>입니다</h1>
+            <p class="hero-subtitle">창의적이고 혁신적인 웹 솔루션을 만듭니다</p>
+            <a href="#projects" class="cta-button">프로젝트 보기</a>
+        </div>
+    </section>
+
+    <!-- 프로젝트 섹션 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">프로젝트</h2>
+            <p class="section-subtitle">최근 작업한 프로젝트들을 소개합니다</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="300" height="200" fill="#8b5cf6" opacity="0.2"/>
+                                <rect x="50" y="50" width="200" height="100" rx="5" fill="#8b5cf6" opacity="0.4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">프로젝트 1</h3>
+                        <p class="project-description">모던한 UI/UX를 적용한 웹 애플리케이션입니다. 반응형 디자인과 최신 기술 스택을 활용했습니다.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="#" class="project-link">자세히 보기 →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="300" height="200" fill="#ec4899" opacity="0.2"/>
+                                <circle cx="150" cy="100" r="50" fill="#ec4899" opacity="0.4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">프로젝트 2</h3>
+                        <p class="project-description">사용자 경험을 중시한 인터랙티브 웹사이트입니다. 애니메이션과 부드러운 전환 효과를 구현했습니다.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
+                        <a href="#" class="project-link">자세히 보기 →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="300" height="200" fill="#10b981" opacity="0.2"/>
+                                <polygon points="150,50 250,150 50,150" fill="#10b981" opacity="0.4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">프로젝트 3</h3>
+                        <p class="project-description">성능 최적화와 접근성을 고려한 웹 플랫폼입니다. 빠른 로딩 속도와 사용자 친화적 인터페이스를 제공합니다.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <a href="#" class="project-link">자세히 보기 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact 섹션 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">연락하기</h2>
+            <p class="section-subtitle">프로젝트 문의나 협업 제안을 환영합니다</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">이름</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">메시지</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">보내기</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
